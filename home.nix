@@ -85,7 +85,7 @@
         git add . &&
         darwin-rebuild switch --flake ~/.config/nix &&
         git commit --message "[Generation #] $1" &&
-        GENERATION=darwin-rebuild --list-generations | tail -n 1 | grep -o "[0-9]*" &&
+        GENERATION=$(darwin-rebuild --list-generations | tail -n 1 | grep -o "[0-9]*") &&
         git commit --amend --message "[Generation $GENERATION] $1" &&
         echo "Switched to generation $GENERATION"
       '';
