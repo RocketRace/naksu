@@ -172,9 +172,12 @@
   homebrew = {
     enable = true;
     casks = [
+      "steam"
       "arduino-ide"
       "obs"
       "kicad"
+      "ukelele"
+      "dyalog"
     ];
   };
 }
