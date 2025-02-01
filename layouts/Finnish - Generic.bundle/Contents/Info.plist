@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.</string>
+	<string>org.sil.ukelele.keyboardlayout.finnish-generic</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>Finnish - Generic</string>
 	<key>CFBundleVersion</key>
 	<string></string>
 </dict>
