@@ -38,6 +38,40 @@
 	<string>line_chart</string>
 	<key>Disk_state</key>
 	<false/>
+	<key>LaunchAtLoginNext</key>
+	<true/>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSOSPLastRootDirectory</key>
+	<data>
+	Ym9vazQDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAIA
+	AAQAAAADAwAAAAQAAAUAAAABAQAAVXNlcnMAAAAGAAAAAQEAAG9saXZpYQAABwAAAAEB
+	AAAuY29uZmlnAAMAAAABAQAAbml4AAUAAAABAQAAc3RhdHMAAAAUAAAAAQYAABAAAAAg
+	AAAAMAAAAEAAAABMAAAACAAAAAQDAABqQgAAAAAAAAgAAAAEAwAA+m4AAAAAAAAIAAAA
+	BAMAACvfAwAAAAAACAAAAAQDAABtDgYAAAAAAAgAAAAEAwAANZYjAAAAAAAUAAAAAQYA
+	AHgAAACIAAAAmAAAAKgAAAC4AAAACAAAAAAEAABBxqcaThiAHBgAAAABAgAAAgAAAAAA
+	AAAfAgAAAAAAAB8CAAAAAAAAAAAAAAEFAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1
+	AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAAIcR
+	OQAAAAgAAAAABAAAQcachScAAAAkAAAAAQEAAEVGNzI0RUUwLTE0OTItNDI2RS05RDQ4
+	LTU1MDY4OUZEQTFEQRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAO8TAAABAAAAAQAAAAEB
+	AAAvAAAAMAAAAAECAABkbmliAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABy
+	ZGxmAgAAAAAAAADwAAAA/v///wEAAAAAAAAAEwAAAAQQAABcAAAAAAAAAAUQAADIAAAA
+	AAAAABAQAAD0AAAAAAAAAEAQAADkAAAAAAAAAAIgAADIAQAAAAAAAAUgAAA4AQAAAAAA
+	ABAgAABIAQAAAAAAABEgAAB8AQAAAAAAABIgAABcAQAAAAAAABMgAABsAQAAAAAAACAg
+	AACoAQAAAAAAADAgAAAUAQAAAAAAAAHAAAAcAQAAAAAAABHAAAAgAAAAAAAAABLAAAAs
+	AQAAAAAAAAHQAAAUAQAAAAAAABDQAAAEAAAAAAAAABfwAABMAAAAAAAAACLwAADUAQAA
+	AAAAAA==
+	</data>
+	<key>NSStatusItem Preferred Position Battery_battery</key>
+	<real>390</real>
+	<key>NSStatusItem Preferred Position CPU</key>
+	<real>503</real>
+	<key>NSStatusItem Preferred Position Network</key>
+	<real>555</real>
+	<key>NSStatusItem Preferred Position RAM_line_chart</key>
+	<real>455</real>
 	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -50,7 +84,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>320 249 800 448 0 0 1440 875 </string>
+	<string>320 320 800 448 0 0 1440 875 </string>
 	<key>Network_label_position</key>
 	<integer>2</integer>
 	<key>Network_networkChart_position</key>
@@ -108,7 +142,7 @@
 	<key>telemetry_id</key>
 	<string>93E6F23F-E527-4FD2-975D-733584A4B759</string>
 	<key>updater_check_ts</key>
-	<integer>1738406686</integer>
+	<integer>1738435891</integer>
 	<key>version</key>
 	<string>2.11.21</string>
 </dict>
