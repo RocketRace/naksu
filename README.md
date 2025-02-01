@@ -6,3 +6,4 @@
 - Stats: import settings manually
 - Wallpaper manually
 - Proton drive symlink manually
+- Kicad documents folder?

@@ -180,6 +180,7 @@
       "ukelele"
       "dyalog"
       "fontforge"
+      "karabiner-elements"
     ];
   };
 }
