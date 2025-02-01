@@ -6,3 +6,4 @@
 - Finder sidebar, dock, space count set up manually
 - Accessibility: Three finger zoom and finder titlebar icons must be set up manually
 - Stats: import settings manually
+- Wallpaper manually
