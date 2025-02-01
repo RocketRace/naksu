@@ -109,8 +109,7 @@
     # DON'T AUTOMATICALLY FUCK UP MY KEYBOARD LAYOUT
     CustomUserPreferences."com.apple.HIToolbox".AppleGlobalTextInputProperties.TextInputGlobalPropertyPerContextInput = 0;
     # I would prefer not to click to show desktop
-    CustomUserPreferences."com.apple.WindowManager".EnableStandardClickToShowDesktop = 0;
-    CustomUserPreferences."com.apple.WindowManager".HasDisplayedShowDesktopEducation = 1;
+    WindowManager.EnableStandardClickToShowDesktop = false;
     # Minor control center customizations: hide some things and show others
     # (battery will be shown by Stats app)
     CustomUserPreferences."com.apple.controlcenter"."NSStatusItem Visible Battery" = 0; # not documented?
