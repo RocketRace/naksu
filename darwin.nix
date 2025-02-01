@@ -156,6 +156,9 @@
     # # Show icons in finder title bar
     # CustomUserPreferences."com.apple.universalaccess".showWindowTitlebarIcons = 1;
   };
+  # Allow touchid in sudo prompts
+  security.pam.enableSudoTouchIdAuth = true;
+  # Add p10k font
   fonts.packages = [
     pkgs.meslo-lgs-nf
   ];
