@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Battery_battery_additional</key>
+	<string>percentageAndTime</string>
+	<key>Battery_battery_xlSize</key>
+	<false/>
+	<key>Bluetooth_state</key>
+	<false/>
+	<key>CPU_barChart_position</key>
+	<integer>3</integer>
+	<key>CPU_label_position</key>
+	<integer>1</integer>
+	<key>CPU_lineChart_position</key>
+	<integer>0</integer>
+	<key>CPU_line_chart_box</key>
+	<true/>
+	<key>CPU_line_chart_frame</key>
+	<false/>
+	<key>CPU_line_chart_label</key>
+	<true/>
+	<key>CPU_line_chart_value</key>
+	<true/>
+	<key>CPU_mini_label</key>
+	<true/>
+	<key>CPU_mini_position</key>
+	<integer>2</integer>
+	<key>CPU_oneView</key>
+	<true/>
+	<key>CPU_pieChart_position</key>
+	<integer>4</integer>
+	<key>CPU_state</key>
+	<true/>
+	<key>CPU_tachometer_position</key>
+	<integer>5</integer>
+	<key>CPU_widget</key>
+	<string>line_chart</string>
+	<key>Disk_state</key>
+	<false/>
+	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>505 534 430 163 0 0 1440 875 </string>
+	<key>Network_label_position</key>
+	<integer>2</integer>
+	<key>Network_networkChart_position</key>
+	<integer>1</integer>
+	<key>Network_network_chart_label</key>
+	<false/>
+	<key>Network_network_chart_reverseOrder</key>
+	<false/>
+	<key>Network_oneView</key>
+	<true/>
+	<key>Network_speed_downloadColor</key>
+	<string>secondBlue</string>
+	<key>Network_speed_icon</key>
+	<string>none</string>
+	<key>Network_speed_position</key>
+	<integer>0</integer>
+	<key>Network_state</key>
+	<true/>
+	<key>Network_state_position</key>
+	<integer>3</integer>
+	<key>Network_text_position</key>
+	<integer>4</integer>
+	<key>Network_widget</key>
+	<string>network_chart,speed</string>
+	<key>RAM_barChart_position</key>
+	<integer>3</integer>
+	<key>RAM_label_position</key>
+	<integer>1</integer>
+	<key>RAM_lineChart_position</key>
+	<integer>0</integer>
+	<key>RAM_line_chart_label</key>
+	<true/>
+	<key>RAM_line_chart_value</key>
+	<true/>
+	<key>RAM_memory_position</key>
+	<integer>5</integer>
+	<key>RAM_mini_position</key>
+	<integer>2</integer>
+	<key>RAM_pieChart_position</key>
+	<integer>4</integer>
+	<key>RAM_state</key>
+	<true/>
+	<key>RAM_tachometer_position</key>
+	<integer>6</integer>
+	<key>RAM_text_position</key>
+	<integer>7</integer>
+	<key>RAM_widget</key>
+	<string>line_chart</string>
+	<key>runAtLoginInitialized</key>
+	<true/>
+	<key>setupProcess</key>
+	<true/>
+	<key>telemetry</key>
+	<false/>
+	<key>telemetry_id</key>
+	<string>93E6F23F-E527-4FD2-975D-733584A4B759</string>
+	<key>updater_check_ts</key>
+	<integer>1738406686</integer>
+	<key>version</key>
+	<string>2.11.21</string>
+</dict>
+</plist>

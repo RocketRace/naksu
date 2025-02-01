@@ -9,6 +9,7 @@
     # development
     iterm2
     cargo
+    stats
     # personal
     discord
     spotify
