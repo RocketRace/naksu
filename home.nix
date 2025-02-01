@@ -130,15 +130,31 @@
   };
   programs.vscode = {
     enable = true;
+    # This property will be used to generate settings.json
     userSettings = {
-      # This property will be used to generate settings.json:
-      # https://code.visualstudio.com/docs/getstarted/settings#_settingsjson
-      "editor.formatOnSave" = false;
+      # aesthetics
       "workbench.colorTheme" = "Ayu Mirage Bordered";
+      "editor.fontFamily" = "'MesloLGS NF', 'Braille CC0', Menlo, Monaco, 'Courier New', monospace";
+      "workbench.iconTheme" = "helium-icon-theme";
+      "helium-icon-theme.opacity" = 0.5;
+      "terminal.integrated.cursorStyle" = "line";
+      # basic behavior
+      "editor.formatOnSave" = false;
+      "explorer.confirmDelete" = false;
+      "explorer.autoReveal" = false;
+      "explorer.confirmDragAndDrop" = false;
+      "terminal.external.osxExec" = "iTerm";
+      # minor annoyances
+      "editor.accessibilitySupport" = "off";
+      "workbench.startupEditor" = "none";
+      "window.newWindowDimensions" = "maximized";
+      "telemetry.telemetryLevel" = "off";
+      "terminal.integrated.showExitAlert" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
       teabyii.ayu
+      helgardrichard.helium-icon-theme
     ];
   };
   programs.firefox = {
