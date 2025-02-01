@@ -167,4 +167,6 @@
   ];
   # Tailscale!
   services.tailscale.enable = true;
+  # homebrew junk here
+  homebrew.enable = true;
 }
