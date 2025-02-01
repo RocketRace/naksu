@@ -12,6 +12,7 @@
     stats
     radicle-node
     cbqn-replxx
+    python311
     python313
     # personal
     discord
