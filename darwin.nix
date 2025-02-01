@@ -109,9 +109,12 @@
     # I would prefer not to click to show desktop
     CustomUserPreferences."com.apple.WindowManager".EnableStandardClickToShowDesktop = 0;
     CustomUserPreferences."com.apple.WindowManager".HasDisplayedShowDesktopEducation = 1;
-    # Minor control center customizations: hide battery and show bluetooth (battery will be shown by Stats app)
+    # Minor control center customizations: hide some things and show others
+    # (battery will be shown by Stats app)
     CustomUserPreferences."com.apple.controlcenter"."NSStatusItem Visible Battery" = 0; # not documented?
     controlcenter.Bluetooth = true;
+    controlcenter.NowPlaying = false;
+    controlcenter.Sound = false;
     # Customize touchbar shortcuts
     CustomUserPreferences."com.apple.controlstrip".MiniCustomized = [
       "com.apple.system.mission-control"
