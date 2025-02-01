@@ -112,9 +112,10 @@
       s = "status";
       a = "! git add . && git status";
       c = "commit";
-      cm = "commit -m";
-      can = "commit --apend --no-edit";
-      acm = "! git add . && git commit -m";
+      cm = "commit --message";
+      cam = "commit --amend --message";
+      can = "commit --amend --no-edit";
+      acm = "! git add . && git commit --message";
       acan = "!git add . && git commit --amend --no-edit";
       dc = "diff --cached";
       dh = "!f() { git diff \"head~$1\"; }; f";
