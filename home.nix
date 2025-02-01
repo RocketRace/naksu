@@ -158,6 +158,7 @@
       teabyii.ayu
       helgardrichard.helium-icon-theme
       ms-python.python
+      usernamehw.errorlens
     ];
   };
   programs.firefox = {
