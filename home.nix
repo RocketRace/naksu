@@ -153,6 +153,7 @@
       "terminal.integrated.showExitAlert" = false;
       "chat.commandCenter.enabled" = false;
       "extensions.autoUpdate" = false;
+      "workbench.remoteIndicator.showExtensionRecommendations" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
@@ -160,6 +161,7 @@
       helgardrichard.helium-icon-theme
       ms-python.python
       usernamehw.errorlens
+      rust-lang.rust-analyzer
     ];
   };
   programs.firefox = {
