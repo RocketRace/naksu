@@ -82,10 +82,11 @@
     enable = true;
     shellAliases = {
       switch = ''cd ~/.config/nix &&
-        ${pkgs.git} add . &&
+        git add . &&
         darwin-rebuild switch --flake ~/.config/nix &&
-        ${pkgs.git} commit --message "$1" &&
-        GENERATION=readlink /nix/var/nix/profiles/system | ${pkgs.gnugrep} -o "[0-9]*" &&
+        git commit --message "[Generation #] $1" &&
+        GENERATION=readlink /nix/var/nix/profiles/system | grep -o "[0-9]*" &&
+        git commit --amend --message "[Generation $GENERATION] $1"
       '';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
