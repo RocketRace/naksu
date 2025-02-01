@@ -11,6 +11,7 @@
     cargo
     stats
     radicle-node
+    cbqn-replxx
     # personal
     discord
     spotify
@@ -162,4 +163,6 @@
   fonts.packages = [
     pkgs.meslo-lgs-nf
   ];
+  # Tailscale!
+  services.tailscale.enable = true;
 }
