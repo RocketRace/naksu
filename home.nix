@@ -159,8 +159,8 @@
       teabyii.ayu
       helgardrichard.helium-icon-theme
       ms-python.python
-      usernamehw.errorlens
-      rust-lang.rust-analyzer
+      #usernamehw.errorlens
+      #rust-lang.rust-analyzer
     ];
   };
   programs.firefox = {
