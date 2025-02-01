@@ -152,8 +152,8 @@
       "telemetry.telemetryLevel" = "off";
       "terminal.integrated.showExitAlert" = false;
       "chat.commandCenter.enabled" = false;
-      "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
+      "extensions.autoUpdate" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
