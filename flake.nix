@@ -18,7 +18,7 @@
     nixpkgs-firefox-darwin.inputs.nixpkgs.follows = "nixpkgs";
     # declarative homebrew management
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    nix-homebrew.inputs.nixkpgs.follows = "nixpkgs";
+    nix-homebrew.inputs.nixpkgs.follows = "nixpkgs";
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
       flake = false;
