@@ -104,7 +104,7 @@
   };
   programs.git = {
     enable = true;
-    userName = "Olivia Palmu";
+    userName = "RocketRace";
     userEmail = "git@olivialta.cc";
     ignores = [ ".DS_Store" ];
     aliases = {
