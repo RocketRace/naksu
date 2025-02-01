@@ -18,6 +18,7 @@
     prismlauncher
     signal-desktop
     telegram-desktop
+    qbittorrent
   ];
 
   # Necessary for using flakes on this system.
