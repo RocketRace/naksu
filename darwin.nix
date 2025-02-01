@@ -167,8 +167,6 @@
   fonts.packages = [
     pkgs.meslo-lgs-nf
   ];
-  # Tailscale!
-  services.tailscale.enable = true;
   # homebrew junk here
   homebrew = {
     enable = true;
@@ -181,6 +179,7 @@
       "dyalog"
       "fontforge"
       "karabiner-elements"
+      "tailscale"
     ];
   };
 }
