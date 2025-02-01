@@ -114,9 +114,9 @@
     controlcenter.Bluetooth = true;
     # Customize touchbar shortcuts
     CustomUserPreferences."com.apple.controlstrip".MiniCustomized = [
+      "com.apple.system.mission-control"
       "com.apple.system.brightness"
       "com.apple.system.volume"
-      "com.apple.system.mute"
       "com.apple.system.screencapture"
     ];
     # Hide dock
