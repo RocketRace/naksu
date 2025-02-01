@@ -154,12 +154,12 @@
       "chat.commandCenter.enabled" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
-      # jnoortheen.nix-ide
-      # teabyii.ayu
-      # helgardrichard.helium-icon-theme
-      # ms-python.python
-      # usernamehw.errorlens
-      # rust-lang.rust-analyzer
+      jnoortheen.nix-ide
+      teabyii.ayu
+      helgardrichard.helium-icon-theme
+      ms-python.python
+      usernamehw.errorlens
+      rust-lang.rust-analyzer
     ];
   };
   programs.firefox = {
