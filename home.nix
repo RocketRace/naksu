@@ -74,6 +74,7 @@
   #  /etc/profiles/per-user/olivia/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
+    KICAD_DOCUMENTS_HOME = "~/Documents/code/kicad";
     # EDITOR = "emacs";
   };
 
