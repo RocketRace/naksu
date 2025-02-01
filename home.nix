@@ -145,12 +145,13 @@
       "explorer.autoReveal" = false;
       "explorer.confirmDragAndDrop" = false;
       "terminal.external.osxExec" = "iTerm";
-      # minor annoyances
+      # annoyances of various degrees
       "editor.accessibilitySupport" = "off";
       "workbench.startupEditor" = "none";
       "window.newWindowDimensions" = "maximized";
       "telemetry.telemetryLevel" = "off";
       "terminal.integrated.showExitAlert" = false;
+      "chat.commandCenter.enabled" = false;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
