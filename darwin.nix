@@ -19,6 +19,7 @@
     signal-desktop
     telegram-desktop
     qbittorrent
+    gimp
   ];
 
   # Necessary for using flakes on this system.
@@ -173,6 +174,7 @@
     casks = [
       "arduino-ide"
       "obs"
+      "kicad"
     ];
   };
 }
