@@ -6,3 +6,4 @@
 - Wallpaper manually
 - Proton drive symlink manually
 - Kicad documents folder?
+- todo: .arduinoIDE/arduino-cli.yaml
