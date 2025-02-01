@@ -16,6 +16,8 @@
     discord
     spotify
     prismlauncher
+    signal-desktop
+    telegram-desktop
   ];
 
   # Necessary for using flakes on this system.
