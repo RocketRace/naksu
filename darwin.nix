@@ -20,6 +20,7 @@
     telegram-desktop
     qbittorrent
     gimp
+    zotero
   ];
 
   # Necessary for using flakes on this system.
