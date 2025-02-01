@@ -180,6 +180,7 @@
       "fontforge"
       "karabiner-elements"
       "tailscale"
+      "proton-mail"
     ];
   };
 }
