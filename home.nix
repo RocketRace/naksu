@@ -155,7 +155,7 @@
       jnoortheen.nix-ide
       teabyii.ayu
       helgardrichard.helium-icon-theme
-      # ms-python.python
+      ms-python.python
     ];
   };
   programs.firefox = {
