@@ -172,6 +172,7 @@
     enable = true;
     casks = [
       "arduino-ide"
+      "obs"
     ];
   };
 }

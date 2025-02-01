@@ -1,8 +1,6 @@
 - iterm configuration must be imported manually
 - karabiner-elements must be installed manually
 - keyboard layouts must be installed manually
-- Arduino IDE installed manually
-- Homebrew installed manually
 - Finder sidebar, dock, space count set up manually
 - Accessibility: Three finger zoom and finder titlebar icons must be set up manually
 - Stats: import settings manually
