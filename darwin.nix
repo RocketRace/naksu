@@ -179,6 +179,7 @@
       "kicad"
       "ukelele"
       "dyalog"
+      "fontforge"
     ];
   };
 }
