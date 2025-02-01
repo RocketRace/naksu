@@ -181,6 +181,7 @@
       "karabiner-elements"
       "tailscale"
       "proton-mail"
+      "proton-drive"
     ];
   };
 }
