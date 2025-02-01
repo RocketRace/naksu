@@ -182,6 +182,7 @@
       "tailscale"
       "proton-mail"
       "proton-drive"
+      "protonvpn"
     ];
   };
 }
