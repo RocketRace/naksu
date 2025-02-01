@@ -85,7 +85,7 @@
         git add . &&
         darwin-rebuild switch --flake ~/.config/nix &&
         git commit --message "[Generation #] $1" &&
-        GENERATION=readlink /nix/var/nix/profiles/system | grep -o "[0-9]*" &&
+        GENERATION=darwin-rebuild --list-generations | tail -N 1 | grep -o "[0-9]*" &&
         git commit --amend --message "[Generation $GENERATION] $1"
       '';
     };
