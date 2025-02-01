@@ -183,6 +183,7 @@
       "proton-mail"
       "proton-drive"
       "protonvpn"
+      "processing"
     ];
   };
 }
