@@ -81,7 +81,12 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-      switch = "darwin-rebuild switch --flake ~/.config/nix";
+      switch = ''cd ~/.config/nix &&
+        ${pkgs.git} add . &&
+        darwin-rebuild switch --flake ~/.config/nix &&
+        ${pkgs.git} commit --message "$1" &&
+        GENERATION=readlink /nix/var/nix/profiles/system | ${pkgs.gnugrep} -o "[0-9]*" &&
+      '';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initExtra = ''
