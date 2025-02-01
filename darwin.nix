@@ -10,6 +10,7 @@
     iterm2
     cargo
     stats
+    radicle-node
     # personal
     discord
     spotify
