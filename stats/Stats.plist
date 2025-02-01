@@ -19,7 +19,7 @@
 	<key>CPU_line_chart_frame</key>
 	<false/>
 	<key>CPU_line_chart_label</key>
-	<true/>
+	<false/>
 	<key>CPU_line_chart_value</key>
 	<true/>
 	<key>CPU_mini_label</key>
@@ -50,7 +50,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>505 534 430 163 0 0 1440 875 </string>
+	<string>320 249 800 448 0 0 1440 875 </string>
 	<key>Network_label_position</key>
 	<integer>2</integer>
 	<key>Network_networkChart_position</key>
@@ -82,7 +82,7 @@
 	<key>RAM_lineChart_position</key>
 	<integer>0</integer>
 	<key>RAM_line_chart_label</key>
-	<true/>
+	<false/>
 	<key>RAM_line_chart_value</key>
 	<true/>
 	<key>RAM_memory_position</key>
