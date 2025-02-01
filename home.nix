@@ -86,7 +86,8 @@
         darwin-rebuild switch --flake ~/.config/nix &&
         git commit --message "[Generation #] $1" &&
         GENERATION=darwin-rebuild --list-generations | tail -N 1 | grep -o "[0-9]*" &&
-        git commit --amend --message "[Generation $GENERATION] $1"
+        git commit --amend --message "[Generation $GENERATION] $1" &&
+        echo "Switched to generation $GENERATION"
       '';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
