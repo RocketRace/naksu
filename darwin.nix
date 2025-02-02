@@ -188,4 +188,6 @@
       "processing"
     ];
   };
+  # tasty nix develop
+  programs.direnv.enable = true;
 }
