@@ -189,5 +189,8 @@
     ];
   };
   # tasty nix develop
-  programs.direnv.enable = true;
+  programs.direnv = {
+    enable = true;
+    direnvrcExtra = ''echo "loaded direnv!"'';
+  };
 }
