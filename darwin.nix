@@ -149,7 +149,7 @@
       { enabled = 1; name = "PDF"; }
       { enabled = 1; name = "PRESENTATIONS"; }
       { enabled = 0; name = "MENU_SPOT LIGHT_SUGGESTIONS"; }
-      { enabled = 0; name = "SPREADSHEETS"; }
+      { enabled = 1; name = "SPREADSHEETS"; }
       { enabled = 1; name = "SYSTEM_PREFS"; }
       { enabled = 0; name = "TIPS"; }
       { enabled = 0; name = "BOOKMARKS"; }
