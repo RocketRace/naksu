@@ -163,6 +163,7 @@
       ms-python.python
       usernamehw.errorlens
       rust-lang.rust-analyzer
+      mkhl.direnv
     ];
   };
   programs.firefox = {
