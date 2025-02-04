@@ -155,6 +155,8 @@
       "chat.commandCenter.enabled" = false;
       "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
+      # extension annoyances
+      "direnv.restart.automatic" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
