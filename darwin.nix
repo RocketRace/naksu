@@ -15,7 +15,6 @@
     python311
     python313
     # personal
-    discord
     spotify
     prismlauncher
     signal-desktop
