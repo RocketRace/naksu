@@ -1,0 +1,4 @@
+/* remove slash commands button from bot dms */
+div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]) {
+    display: none;
+}
