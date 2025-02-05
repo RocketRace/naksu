@@ -189,7 +189,17 @@
   # tasty nix develop
   programs.direnv = {
     enable = true;
-    # nix-direnv.enable = true;
+  };
+  # endless fight against discord
+  programs.discocss = {
+    enable = true;
+    discordAlias = false;
+    css = ''
+      /* remove slash commands button from bot dms */
+      div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]) {
+        display: none;
+      }
+    '';
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
