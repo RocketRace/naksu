@@ -26,12 +26,12 @@
             rev = "9d6a0366990867f1b36c5f17b3fa3fd3430bdc97";
             hash = "sha256-UnJh39fzbPnXZmBHkAB3w+MeYw/Cpb+m9fpAVMVqM+M=";
           };
-          buildInputs = [ pkgs.python3.pkgs.psutil ];
+          buildInputs = [ psutil ];
       };
       beautifuldiscord = pkgs.callPackage recipe {};
       env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
       in pkgs.writeShellScriptBin "dinject" ''
-        ${env}/bin/beautifuldiscord --css ${./discord/style.css}
+        ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
       ''
     )
     # # Adds the 'hello' command to your environment. It prints a friendly
