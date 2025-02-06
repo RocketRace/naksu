@@ -26,7 +26,7 @@
             rev = "9d6a0366990867f1b36c5f17b3fa3fd3430bdc97";
             hash = "sha256-UnJh39fzbPnXZmBHkAB3w+MeYw/Cpb+m9fpAVMVqM+M=";
           };
-          buildInputs = [ psutil ];
+          propagatedBuildInputs = [ psutil ];
       };
       beautifuldiscord = pkgs.callPackage recipe {};
       env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
