@@ -39,11 +39,10 @@
           propagatedBuildInputs = [ psutil ];
       };
       beautifuldiscord = pkgs.callPackage recipe {};
-      in beautifuldiscord
-      # env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
-      # in pkgs.writeShellScriptBin "dinject" ''
-      #   ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
-      # ''
+      env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
+      in pkgs.writeShellScriptBin "dinject" ''
+        ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
+      ''
     )
   ];
 
