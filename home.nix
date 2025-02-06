@@ -16,7 +16,7 @@
     (
       let recipe = { python3, fetchFromGitHub }:
         with python3.pkgs;
-        buildPythonPackage rec {
+        buildPythonApplication rec {
           name = "BeautifulDiscord";
           version = "0.2.0";
           pyproject = false;
@@ -29,10 +29,11 @@
           propagatedBuildInputs = [ psutil ];
       };
       beautifuldiscord = pkgs.callPackage recipe {};
-      env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
-      in pkgs.writeShellScriptBin "dinject" ''
-        ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
-      ''
+      in beautifuldiscord
+      # env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
+      # in pkgs.writeShellScriptBin "dinject" ''
+      #   ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
+      # ''
     )
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
