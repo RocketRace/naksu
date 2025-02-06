@@ -13,6 +13,18 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    # (let recipe = pkgs.python3.pkgs.buildPythonPackage {
+    #   name = "BeautifulDiscord";
+    #   version = "0.2.0";
+    #   pyproject = false;
+    #   src = pkgs.fetchFromGitHub {
+    #     owner = "leovoel";
+    #     repo = "BeautifulDiscord";
+    #     rev = "9d6a0366990867f1b36c5f17b3fa3fd3430bdc97";
+    #     hash = "";
+    #   };
+    #   buildInputs = [ pkgs.python3.pkgs.psutil ];
+    # }; in pkgs.callPackage recipe {})
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -83,12 +95,13 @@
     shellAliases = {
       switch = ''cd ~/.config/nix &&
         git add . &&
-        darwin-rebuild switch --flake ~/.config/nix &&
+        darwin-rebuild switch --show-trace --flake ~/.config/nix &&
         git commit --message "[Generation #] $1" &&
         GENERATION=$(darwin-rebuild --list-generations | tail -1 | grep -m 1 -o "[0-9]*" | head -1) &&
         git commit --amend --message "[Generation $GENERATION] $1" &&
         echo "Switched to generation $GENERATION"
       '';
+      dinject = ''{}/bin/beautifuldiscord --css ${./discord/style.css}'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initExtra = ''
