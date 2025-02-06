@@ -23,6 +23,28 @@
     qbittorrent
     gimp
     zotero
+    (
+      let recipe = { python3, fetchFromGitHub }:
+        with python3.pkgs;
+        buildPythonApplication rec {
+          name = "BeautifulDiscord";
+          version = "0.2.0";
+          pyproject = false;
+          src = fetchFromGitHub {
+            owner = "leovoel";
+            repo = "BeautifulDiscord";
+            rev = "9d6a0366990867f1b36c5f17b3fa3fd3430bdc97";
+            hash = "sha256-UnJh39fzbPnXZmBHkAB3w+MeYw/Cpb+m9fpAVMVqM+M=";
+          };
+          propagatedBuildInputs = [ psutil ];
+      };
+      beautifuldiscord = pkgs.callPackage recipe {};
+      in beautifuldiscord
+      # env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
+      # in pkgs.writeShellScriptBin "dinject" ''
+      #   ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
+      # ''
+    )
   ];
 
   # Necessary for using flakes on this system.
