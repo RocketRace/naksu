@@ -26,7 +26,7 @@
     (
       let recipe = { python3, fetchFromGitHub }:
         with python3.pkgs;
-        buildPythonApplication rec {
+        buildPythonPackage {
           name = "BeautifulDiscord";
           version = "0.2.0";
           pyproject = false;
