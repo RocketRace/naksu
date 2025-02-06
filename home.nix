@@ -29,9 +29,7 @@
           buildInputs = [ pkgs.python3.pkgs.psutil ];
       };
       beautifuldiscord = pkgs.callPackage recipe {};
-      env = pkgs.python3.buildEnv.override {
-        extraLibs = [ beautifuldiscord ];
-      };
+      env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
       in pkgs.writeShellScriptBin "dinject" ''
         ${env}/bin/beautifuldiscord --css ${./discord/style.css}
       ''
