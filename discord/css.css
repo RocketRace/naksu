@@ -3,13 +3,11 @@
 /* slash commands button in bot dms */
 div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]),
 /* apps selector */
-div[class^=channelAppLauncher]:has(button[class^=app-launcher-entrypoint]),
+div[class^=channelAppLauncher],
 /* nitro gift button */
 button[aria-label="Send a gift"],
 /* turn this reply chain into a thread */
 [class*="threadSuggestionBar_"],
-/* server activity */
-div[aria-label="Members"] > h3:has(span[role="button"]),
 /* nitro page */
 a[href="/store"],
 /* shop page */
