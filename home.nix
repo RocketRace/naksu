@@ -190,6 +190,17 @@
   programs.direnv = {
     enable = true;
   };
+  home.file."Library/Application Support/discord/settings.json" = {
+    enable = true;
+    text = ''
+      {
+        "chromiumSwitches": {},
+        "IS_MAXIMIZED": true,
+        "IS_MINIMIZED": false,
+        "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true
+      }
+    '';
+  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

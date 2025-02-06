@@ -1,4 +1,15 @@
-/* remove slash commands button from bot dms */
-div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]) {
-    display: none;
+/* slash commands button in bot dms */
+div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]),
+/* nitro gift button */
+button[aria-label="Send a gift"],
+/* turn this reply chain into a thread */
+[class*="threadSuggestionBar_"],
+/* server activity */
+div[aria-label="Members"] > h3:has(span[role="button"]),
+/* nitro page */
+a[href="/store"],
+/* shop page */
+a[href="/shop"],
+x-placeholder {
+    display: none !important;
 }
