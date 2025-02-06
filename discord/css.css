@@ -1,5 +1,9 @@
+/* I'm not here to remove bloat, only active detriments to usability */
+
 /* slash commands button in bot dms */
 div[class^=entryPointButtonContainer]:has(button[class^=entryPointAppCommandButton]),
+/* apps selector */
+div[class^=channelAppLauncher]:has(button[class^=app-launcher-entrypoint]),
 /* nitro gift button */
 button[aria-label="Send a gift"],
 /* turn this reply chain into a thread */
@@ -11,5 +15,5 @@ a[href="/store"],
 /* shop page */
 a[href="/shop"],
 x-placeholder {
-    display: none !important;
+    display: none;
 }
