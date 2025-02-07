@@ -12,6 +12,8 @@ button[aria-label="Send a gift"],
 a[href="/store"],
 /* shop page */
 a[href="/shop"],
+/* guild discovery */
+ul[data-list-id="guildsnav"] div[class^="itemsContainer"] div[class^="footer"]
 x-placeholder {
     display: none;
 }
