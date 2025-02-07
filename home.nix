@@ -190,6 +190,8 @@
       teabyii.ayu
       helgardrichard.helium-icon-theme
       ms-python.python
+      ms-python.vscode-pylance
+      ms-python.debugpy
       usernamehw.errorlens
       rust-lang.rust-analyzer
       mkhl.direnv
