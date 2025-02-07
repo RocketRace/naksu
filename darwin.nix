@@ -185,6 +185,8 @@
   fonts.packages = [
     pkgs.meslo-lgs-nf
   ];
+  # no
+  environment.variables.HOMEBREW_NO_ANALYTICS = "1";
   # homebrew junk here
   homebrew = {
     enable = true;
