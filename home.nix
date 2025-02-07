@@ -172,7 +172,7 @@
       "explorer.confirmDelete" = false;
       "explorer.autoReveal" = false;
       "explorer.confirmDragAndDrop" = false;
-      "terminal.external.osxExec" = "iTerm2.app";
+      "terminal.external.osxExec" = "iterm2";
       # annoyances of various degrees
       "editor.accessibilitySupport" = "off";
       "workbench.startupEditor" = "none";
