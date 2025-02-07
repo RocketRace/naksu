@@ -185,14 +185,14 @@
       # extension annoyances
       "direnv.restart.automatic" = true;
       # full chunky python LSP
-      # "python.analysis.inlayHints.callArgumentNames" = "partial";
-      # "python.analysis.inlayHints.functionReturnTypes" = true;
-      # "python.analysis.inlayHints.variableTypes" = true;
+      "python.analysis.inlayHints.callArgumentNames" = "partial";
+      "python.analysis.inlayHints.functionReturnTypes" = true;
+      "python.analysis.inlayHints.variableTypes" = true;
       "python.analysis.languageServerMode" = "full";
       "python.analysis.typeCheckingMode" = "standard";
-      # "python.analysis.typeEvaluation.deprecateTypingAliases" = true;
-      # "python.analysis.typeEvaluation.strictDictionaryInference" = true;
-      # "python.analysis.typeEvaluation.strictListInference" = true;
+      "python.analysis.typeEvaluation.deprecateTypingAliases" = true;
+      "python.analysis.typeEvaluation.strictDictionaryInference" = true;
+      "python.analysis.typeEvaluation.strictListInference" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
