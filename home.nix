@@ -164,8 +164,6 @@
       # aesthetics
       "workbench.colorTheme" = "Ayu Mirage Bordered";
       "editor.fontFamily" = "'MesloLGS NF', 'Braille CC0', Menlo, Monaco, 'Courier New', monospace";
-      "workbench.iconTheme" = "helium-icon-theme";
-      "helium-icon-theme.opacity" = 0.5;
       "terminal.integrated.cursorStyle" = "line";
       # basic behavior
       "editor.formatOnSave" = false;
@@ -197,7 +195,6 @@
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
       teabyii.ayu
-      helgardrichard.helium-icon-theme
       ms-python.python
       ms-python.vscode-pylance
       ms-python.debugpy
