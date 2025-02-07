@@ -170,7 +170,7 @@
       "explorer.confirmDelete" = false;
       "explorer.autoReveal" = false;
       "explorer.confirmDragAndDrop" = false;
-      "terminal.external.osxExec" = "${pkgs.iterm2}";
+      "terminal.external.osxExec" = "${pkgs.iterm2}/bin/iterm2";
       # annoyances of various degrees
       "editor.accessibilitySupport" = "off";
       "workbench.startupEditor" = "none";
