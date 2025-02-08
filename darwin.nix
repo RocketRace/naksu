@@ -7,7 +7,6 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     # development
-    iterm2
     cargo
     stats
     radicle-node
@@ -191,6 +190,7 @@
   homebrew = {
     enable = true;
     casks = [
+      "iterm2"
       "steam"
       "arduino-ide"
       "obs"
