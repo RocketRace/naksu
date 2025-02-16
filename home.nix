@@ -116,6 +116,7 @@
         git commit --amend --message "[Generation $GENERATION] $1" &&
         echo "Switched to generation $GENERATION"
       '';
+      flake-update = ''cd ~/.config/nix && nix flake update && switch'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initExtra = ''
