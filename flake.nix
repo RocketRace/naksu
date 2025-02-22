@@ -13,9 +13,6 @@
     # VSCode extensions are not in nixpkgs
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
-    # Firefox on darwin is broken in nixpkgs as of now, we use an overlay
-    nixpkgs-firefox-darwin.url = "github:bandithedoge/nixpkgs-firefox-darwin";
-    nixpkgs-firefox-darwin.inputs.nixpkgs.follows = "nixpkgs";
     # declarative homebrew management
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     nix-homebrew.inputs.nixpkgs.follows = "nixpkgs";
@@ -40,7 +37,6 @@
     nixpkgs,
     mac-app-util,
     nix-vscode-extensions,
-    nixpkgs-firefox-darwin,
     nix-homebrew,
     homebrew-core,
     homebrew-cask,

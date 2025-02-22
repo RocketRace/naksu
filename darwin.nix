@@ -35,7 +35,6 @@
   # an overlay is some way to forward to a different registry than nixpkgs, I think?
   nixpkgs.overlays = with inputs; [
     nix-vscode-extensions.overlays.default
-    nixpkgs-firefox-darwin.overlay
   ];
 
   # yey
@@ -190,6 +189,7 @@
   homebrew = {
     enable = true;
     casks = [
+      "firefox"
       "iterm2"
       "steam"
       "arduino-ide"

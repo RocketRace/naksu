@@ -205,11 +205,6 @@
       mkhl.direnv
     ];
   };
-  programs.firefox = {
-    enable = true;
-    # IMPORTANT: use a package provided by the overlay (ends with `-bin`)
-    package = pkgs.firefox-bin;
-  };
   # custom fonts and keylayouts need to go through lower level mechanisms provided by macos
   # jank as hell tbh
   home.file."Library/Fonts/Symlinks" = {
