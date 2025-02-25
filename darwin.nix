@@ -204,6 +204,7 @@
       "proton-drive"
       "protonvpn"
       "processing"
+      "blender"
     ];
   };
 }
