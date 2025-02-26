@@ -14,6 +14,8 @@ a[href="/store"],
 a[href="/shop"],
 /* guild discovery */
 ul[data-list-id="guildsnav"] div[class^="itemsContainer"] div[class^="footer"],
+/* AI junk */
+div[aria-label="Edit Image with Apps"],
 x-placeholder {
     display: none !important;
 }
