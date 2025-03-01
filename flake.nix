@@ -28,6 +28,9 @@
       url = "github:homebrew/homebrew-bundle";
       flake = false;
     };
+    # cross compilation using rosetta
+    nix-rosetta-builder.url = "github:cpick/nix-rosetta-builder";
+    nix-rosetta-builder.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs@{
@@ -41,6 +44,7 @@
     homebrew-core,
     homebrew-cask,
     homebrew-bundle,
+    nix-rosetta-builder,
   }:
   {
     # Build darwin flake using:
@@ -81,6 +85,13 @@
             mutableTaps = false;
           };
         }
+        # An existing Linux builder is needed to initially bootstrap `nix-rosetta-builder`.
+        # If one isn't already available: comment out the `nix-rosetta-builder` module below,
+        # uncomment this `linux-builder` module, and run `darwin-rebuild switch`:
+        # { nix.linux-builder.enable = true; }
+        # Then: uncomment `nix-rosetta-builder`, remove `linux-builder`, and `darwin-rebuild switch`
+        # a second time. Subsequently, `nix-rosetta-builder` can rebuild itself.
+        nix-rosetta-builder.darwinModules.default
       ];
       specialArgs = { inherit inputs; };
     };
