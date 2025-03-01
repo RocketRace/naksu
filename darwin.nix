@@ -207,4 +207,6 @@
       "blender"
     ];
   };
+  # enable linux cross compilation
+  nix.linux-builder.enable = true;
 }
