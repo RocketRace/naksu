@@ -148,8 +148,8 @@
       dc = "diff --cached";
       dh = "!f() { git diff \"head~$1\"; }; f";
       cd = "checkout";
-      pf = "pull --ff-only";
       pa = "push --all";
+      pf = "pull --ff-only";
       spa = "! git stash pop && git add .";
       lg = "! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --";
     };
