@@ -92,7 +92,7 @@
         # Then: uncomment `nix-rosetta-builder`, remove `linux-builder`, and `darwin-rebuild switch`
         # a second time. Subsequently, `nix-rosetta-builder` can rebuild itself.
         nix-rosetta-builder.darwinModules.default
-        { options.rosetta-builder.onDemand = true; }
+        { nix-rosetta-builder.onDemand = true; }
       ];
       specialArgs = { inherit inputs; };
     };
