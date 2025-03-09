@@ -32,8 +32,6 @@
     discord
     spotify
     prismlauncher
-    signal-desktop
-    telegram-desktop
     qbittorrent
     gimp
     zotero
