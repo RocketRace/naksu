@@ -204,7 +204,6 @@
       "proton-drive"
       "protonvpn"
       "processing"
-      "blender"
       "signal"
       "telegram"
     ];
