@@ -205,6 +205,7 @@
       "protonvpn"
       "processing"
       "signal"
+      "blender"
       "telegram"
     ];
   };
