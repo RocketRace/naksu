@@ -16,11 +16,13 @@
     # personal
   ];
 
-  # Necessary for using flakes on this system.
-  nix.settings.experimental-features = "nix-command flakes";
-  
-  # Add GC
-  nix.gc.automatic = true;
+  # Nix-related configuration
+  nix = {
+    settings.experimental-features = [ "nix-command" "flakes" ];
+    optimise.automatic = true;
+    gc.automatic = true;
+    gc.options = "--delete-older-than 7d";
+  };
 
   # Set Git commit hash for darwin-version.
   system.configurationRevision = inputs.self.rev or inputs.self.dirtyRev or null;
