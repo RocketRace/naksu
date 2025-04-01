@@ -198,7 +198,6 @@
       "iterm2"
       "steam"
       "arduino-ide"
-      "obs"
       "kicad"
       "ukelele"
       "dyalog"
