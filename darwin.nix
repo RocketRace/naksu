@@ -193,6 +193,15 @@
   # homebrew junk here
   homebrew = {
     enable = true;
+    # I don't care about idempotent behavior I just wanna have my apps up to date
+    onActivation = {
+      # update brew formulae
+      autoUpdate = true;
+      # upgrade packages
+      upgrade = true;
+      # remove unlisted packages
+      cleanup = "zap";
+    };
     casks = [
       "firefox"
       "iterm2"
