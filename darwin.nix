@@ -193,7 +193,7 @@
   # homebrew junk here
   homebrew = {
     enable = true;
-    casks = builtins.map (cask: { name = cask; greedy = true; }) [
+    casks = [
       "firefox"
       "iterm2"
       "steam"
