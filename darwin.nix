@@ -208,7 +208,7 @@
       "arduino-ide"
       "kicad"
       "ukelele"
-      # "processing"
+      "processing"
       "fontforge"
       "dyalog"
     ];
