@@ -202,6 +202,7 @@
       usernamehw.errorlens
       rust-lang.rust-analyzer
       mkhl.direnv
+      arrterian.nix-env-selector
     ];
   };
   # custom fonts and keylayouts need to go through lower level mechanisms provided by macos
