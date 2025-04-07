@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
     # development
     cargo
+    rustc
     stats
     radicle-node
     cbqn-replxx
