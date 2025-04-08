@@ -10,6 +10,7 @@
     cargo
     rustc # required by rust-analyzer
     rustfmt
+    clippy
     stats
     radicle-node
     cbqn-replxx
