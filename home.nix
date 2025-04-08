@@ -194,13 +194,18 @@
       "python.analysis.typeEvaluation.strictListInference" = true;
     };
     extensions = with pkgs.vscode-marketplace; [
-      jnoortheen.nix-ide
+      # basic
       teabyii.ayu
+      # python
       ms-python.python
       ms-python.vscode-pylance
       ms-python.debugpy
+      # rust
       usernamehw.errorlens
       rust-lang.rust-analyzer
+      tamasfe.even-better-toml
+      # nix
+      jnoortheen.nix-ide
       mkhl.direnv
     ];
   };
