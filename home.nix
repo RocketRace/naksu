@@ -192,6 +192,8 @@
       "python.analysis.typeEvaluation.deprecateTypingAliases" = true;
       "python.analysis.typeEvaluation.strictDictionaryInference" = true;
       "python.analysis.typeEvaluation.strictListInference" = true;
+      # rust
+      "rust-analyzer.check.command" = "clippy";
     };
     extensions = with pkgs.vscode-marketplace; [
       # basic
