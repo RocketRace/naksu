@@ -9,6 +9,7 @@
     # development
     cargo
     rustc # required by rust-analyzer
+    rustfmt
     stats
     radicle-node
     cbqn-replxx
