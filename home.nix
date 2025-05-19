@@ -162,9 +162,11 @@
       "window.newWindowDimensions" = "maximized";
       "telemetry.telemetryLevel" = "off";
       "terminal.integrated.showExitAlert" = false;
-      "chat.commandCenter.enabled" = false;
       "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
+      # please do not enable ai features
+      "chat.commandCenter.enabled" = false;
+      "python.analysis.addHoverSummaries" = false;
       "notebook.experimental.generate" = false;
       # extension annoyances
       "direnv.restart.automatic" = true;
