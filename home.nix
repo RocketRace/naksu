@@ -165,6 +165,7 @@
       "chat.commandCenter.enabled" = false;
       "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
+      "notebook.experimental.generate" = false;
       # extension annoyances
       "direnv.restart.automatic" = true;
       # full chunky python LSP
