@@ -165,7 +165,6 @@
       "chat.commandCenter.enabled" = false;
       "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
-      "jupyter.enableKernelCompletions" = false;
       # extension annoyances
       "direnv.restart.automatic" = true;
       # full chunky python LSP
