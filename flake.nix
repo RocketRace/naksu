@@ -47,6 +47,14 @@
     # $ darwin-rebuild build --flake .#pigeon
     darwinConfigurations."pigeon" = nix-darwin.lib.darwinSystem {
       modules = [
+        {
+          # TEMPORARY, NODEJS DOESN'T BUILD ON 24.11
+          nixpkgs.overlays = [
+            (self: super: {
+              nodejs = super.nodejs_22;
+            })
+          ];
+        }
         ./darwin.nix
         mac-app-util.darwinModules.default
         home-manager.darwinModules.home-manager

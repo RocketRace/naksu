@@ -202,6 +202,8 @@
       ms-python.python
       ms-python.vscode-pylance
       ms-python.debugpy
+      # jupyter
+      ms-toolsai.jupyter
       # rust
       usernamehw.errorlens
       rust-lang.rust-analyzer
