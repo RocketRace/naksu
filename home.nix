@@ -142,6 +142,10 @@
       rerere.enabled = true;
     };
   };
+  programs.jujutsu = {
+    enable = true;
+    settings = { };
+  };
   programs.vscode = {
     enable = true;
     # This property will be used to generate settings.json
