@@ -212,6 +212,8 @@
       # nix
       jnoortheen.nix-ide
       mkhl.direnv
+      # jj
+      visualjj.visualjj
     ];
   };
   # custom fonts and keylayouts need to go through lower level mechanisms provided by macos
