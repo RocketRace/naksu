@@ -48,6 +48,7 @@
   # yey
   networking.hostName = "pigeon";
 
+  system.primaryUser = "Olivia";
   # settings
   system.defaults = {
     # Don't navigate back and forward with two-finger scroll
@@ -186,7 +187,7 @@
     # CustomUserPreferences."com.apple.universalaccess".showWindowTitlebarIcons = 1;
   };
   # Allow touchid in sudo prompts
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
   # Add p10k font
   fonts.packages = [
     pkgs.meslo-lgs-nf

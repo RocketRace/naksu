@@ -101,7 +101,7 @@
       flake-update = ''cd ~/.config/nix && nix flake update && switch'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
-    initExtra = ''
+    initContent = ''
       [[ ! -f ${./p10k/.p10k.zsh} ]] || source ${./p10k/.p10k.zsh}
     '';
     plugins = [
@@ -145,7 +145,7 @@
   programs.vscode = {
     enable = true;
     # This property will be used to generate settings.json
-    userSettings = {
+    profiles.default.userSettings = {
       # aesthetics
       "workbench.colorTheme" = "Ayu Mirage Bordered";
       "editor.fontFamily" = "'MesloLGS NF', 'Braille CC0', Menlo, Monaco, 'Courier New', monospace";
@@ -182,7 +182,7 @@
       # rust
       "rust-analyzer.check.command" = "clippy";
     };
-    extensions = with pkgs.vscode-marketplace; [
+    profiles.default.extensions = with pkgs.vscode-marketplace; [
       # basic
       teabyii.ayu
       # python
