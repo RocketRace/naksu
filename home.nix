@@ -149,7 +149,10 @@
         name = "RocketRace";
         email = "git@olivialta.cc";
       };
-      ui.pager = ":builtin";
+      ui = {
+        pager = ":builtin";
+        default-command = "log";
+      };
     };
   };
   programs.vscode = {
