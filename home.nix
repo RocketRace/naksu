@@ -164,6 +164,7 @@
       "terminal.integrated.showExitAlert" = false;
       "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
+      "workbench.editor.empty.hint" = "hidden";
       # please do not enable ai features
       "chat.commandCenter.enabled" = false;
       "python.analysis.addHoverSummaries" = false;
