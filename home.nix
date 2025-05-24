@@ -144,7 +144,12 @@
   };
   programs.jujutsu = {
     enable = true;
-    settings = { };
+    settings = {
+      user = {
+        name = "RocketRace";
+        email = "git@olivialta.cc";
+      };
+    };
   };
   programs.vscode = {
     enable = true;
