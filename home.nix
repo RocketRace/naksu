@@ -212,7 +212,7 @@
       # nix
       jnoortheen.nix-ide
       mkhl.direnv
-      # jj
+      # jujutsu
       visualjj.visualjj
     ];
   };
