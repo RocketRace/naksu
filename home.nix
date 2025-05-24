@@ -196,6 +196,16 @@
       # rust
       "rust-analyzer.check.command" = "clippy";
     };
+    # =======================================================================
+    # >>>                                                                 <<<
+    # >>> DO NOT UPDATE VSCODE SETTINGS OR EXTENSIONS WHILE IT IS RUNNING <<<
+    # >>>                                                                 <<<
+    # =======================================================================
+    # If you forget and get jumpscared by the default theme, follow these steps:
+    # 1. Quit vscode
+    # 2. Perform some action that touches the vscode configuration, eg.
+    #    toggling some extensions or just updating your flake
+    # 3. Relaunch
     profiles.default.extensions = with pkgs.vscode-marketplace; [
       # basic
       teabyii.ayu
