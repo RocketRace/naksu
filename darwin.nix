@@ -224,6 +224,7 @@
       "processing"
       "fontforge"
       "dyalog"
+      "godot"
     ];
   };
 }
