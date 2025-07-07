@@ -157,6 +157,7 @@
   };
   programs.vscode = {
     enable = true;
+    package = pkgs.vscodium;
     # This property will be used to generate settings.json
     profiles.default.userSettings = {
       # aesthetics
