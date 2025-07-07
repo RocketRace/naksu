@@ -159,6 +159,8 @@
     enable = true;
     package = pkgs.vscodium;
     # This property will be used to generate settings.json
+    # Note that many of the annoyance blockers are no longer needed after switching to vscodium
+    # and instead act as noops. Investigate this
     profiles.default.userSettings = {
       # aesthetics
       "workbench.colorTheme" = "Ayu Mirage Bordered";
