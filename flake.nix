@@ -2,17 +2,20 @@
   description = "My system configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05";
+    nixpkgs-darwin.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
     nix-darwin.url = "github:LnL7/nix-darwin/nix-darwin-25.05";
-    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs-darwin";
+    # Darwin + nixos shared inputs:
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    # Enable apps to show up in spotlight
-    mac-app-util.url = "github:hraban/mac-app-util";
-    mac-app-util.inputs.nixpkgs.follows = "nixpkgs";
-    # VSCode extensions are not in nixpkgs
+    # (VSCode extensions are not in nixpkgs)
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
+    # Darwin-specific inputs:
+    # Enable apps to show up in spotlight
+    mac-app-util.url = "github:hraban/mac-app-util";
+    mac-app-util.inputs.nixpkgs.follows = "nixpkgs-darwin";
     # declarative homebrew management
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     homebrew-core = {
@@ -31,9 +34,10 @@
 
   outputs = inputs@{
     self,
-    home-manager,
-    nix-darwin,
     nixpkgs,
+    nixpkgs-darwin,
+    nix-darwin,
+    home-manager,
     mac-app-util,
     nix-vscode-extensions,
     nix-homebrew,
@@ -90,6 +94,14 @@
         }
       ];
       specialArgs = { inherit inputs; };
+    };
+    # Build nixos flake using:
+    # $ nixos-rebuild build --flake .#magpie
+    nixosConfigurations."magpie" = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./configuration.nix
+      ];
     };
   };
 }
