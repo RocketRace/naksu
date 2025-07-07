@@ -153,6 +153,8 @@
         pager = ":builtin";
         default-command = "log";
       };
+      # goated alias
+      aliases.tug = ["bookmark" "move" "--from" "heads(::@- & bookmarks())" "--to" "@-"];
     };
   };
   programs.vscode = {
