@@ -152,7 +152,22 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix = {
+    settings = {
+      # Enable flakes
+      experimental-features = [ "nix-command" "flakes" ];
+      auto-optimise-store = true;
+    };
+    # Automatic GC & hardlinking
+    gc = {
+      automatic = true;
+      dates = "weekly";
+    };
+    optimise = {
+      automatic = true;
+      dates = [ "weekly" ];
+    };
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
