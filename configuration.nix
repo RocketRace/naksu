@@ -86,6 +86,7 @@
     description = "Olivia";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      resources
       discord
       # For proton VPN
       protonvpn-gui
