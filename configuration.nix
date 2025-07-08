@@ -119,8 +119,12 @@
   # NVIDIA Drivers
   hardware.graphics.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
-  # Open drivers only support the 20xx and 16xx series cards and onwards
-  hardware.nvidia.open = false;
+  hardware.nvidia = {
+    # Open drivers only support the 20xx and 16xx series cards and onwards
+    open = false;
+    # May help with graphical corruption and system crashes on suspend, but hasn't worked for me
+    # powerManagement.enable = true;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
