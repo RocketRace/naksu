@@ -105,6 +105,9 @@
       gnomeExtensions.unblank # Lock screen that isn't blank
       
       # TODO: Once using home-manager, add dconf settings to automatically enable the extensions!
+
+      # global .net SDK for tModLoader mod development
+      dotnetCorePackages.sdk_8_0_3xx 
     ];
   };
 
