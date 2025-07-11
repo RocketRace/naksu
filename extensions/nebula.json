@@ -1,0 +1,74 @@
+{
+    "useFirstSubtitle": false,
+    "visitedColor": "#6fbce6",
+    "ytMuteOnly": false,
+    "hideVideosPerc": 80,
+    "ytOpenTab": false,
+    "showChangelogs": true,
+    "customScriptPage": "",
+    "creatorSettings": {
+        "chubbyemu": {
+            "hideCompletely": true,
+            "hidePlus": true
+        }
+    },
+    "volumeEnabled": false,
+    "volumeLog": false,
+    "playbackChange": 0.1,
+    "theme": null,
+    "autoExpand": false,
+    "rss": true,
+    "autoplay": true,
+    "autoplayQueue": false,
+    "volumeChange": 0.1,
+    "ytReplaceTab": false,
+    "hideVideosEnabled": false,
+    "youtube": false,
+    "volumeShow": false,
+    "playerSettings": {
+        "queue-prev": {
+            "position": 0
+        },
+        "toggle-play-button": {
+            "position": 1
+        },
+        "queue-next": {
+            "position": 2
+        },
+        "volume-toggle-button": {
+            "position": 3
+        },
+        "time": {
+            "position": 4
+        },
+        "expand": {
+            "position": -9
+        },
+        "speeddial": {
+            "position": -8
+        },
+        "auto-play-switch": {
+            "position": -7
+        },
+        "subtitles-toggle-button": {
+            "position": -6
+        },
+        "settings-button": {
+            "position": -5
+        },
+        "chromecast-button": {
+            "position": -4
+        },
+        "picture-in-picture-button": {
+            "position": -3
+        },
+        "theater-mode-button": {
+            "position": -2
+        },
+        "fullscreen-mode-button": {
+            "position": -1
+        }
+    },
+    "watchnebula": false,
+    "purgetime": "6h"
+}
