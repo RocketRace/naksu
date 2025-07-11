@@ -1,0 +1,13 @@
+# get rid of all the copilot junk from github
+github.com##.AppHeader-CopilotChat
+github.com##li[class^=Item]:has(a[href="/settings/copilot"])
+github.com###blob-view-header-copilot-icon
+github.com###copilot-button-container
+github.com##[partial-name="copilot-code-chat"]
+github.com##[partial-name="copilot-actions-chat-button"]
+github.com##div[class^=Box]:has(button#diff-lines-copilot-button)
+github.com##div[class*=CopilotWorkspaceButton]:upward(1)
+# (this is petty)
+github.com##li.TimelineItem:has-text(/Copilot/i)
+# youtube hiders
+youtube.com###related
