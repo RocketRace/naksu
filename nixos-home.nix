@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ ./home-manager/vscode.nix ];
+  
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "olivia";

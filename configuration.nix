@@ -91,8 +91,7 @@
       # For proton VPN
       protonvpn-gui
       wireguard-tools
-      # Prefer vscodium to vscode due to all the junk
-      vscodium
+      
       proton-pass
 
       # Gnome extensions
