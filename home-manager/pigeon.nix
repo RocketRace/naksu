@@ -55,15 +55,8 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-      switch = ''cd ~/.config/nix &&
-        git add . &&
-        sudo darwin-rebuild switch --show-trace --flake ~/.config/nix &&
-        git commit --message "[Generation #] $1" &&
-        GENERATION=$(sudo darwin-rebuild --list-generations | tail -1 | grep -m 1 -o "[0-9]*" | head -1) &&
-        git commit --amend --message "[Generation $GENERATION] $1" &&
-        echo "Switched to generation $GENERATION"
-      '';
-      flake-update = ''cd ~/.config/nix && nix flake update && switch'';
+      pigeon-switch = ''sudo darwin-rebuild switch --flake ~/.config/nix'';
+      pigeon-update = ''cd ~/.config/nix && nix flake update nixpkgs-darwin'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initContent = ''
