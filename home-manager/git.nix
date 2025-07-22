@@ -45,6 +45,8 @@
         pager = ":builtin";
         default-command = "log";
       };
+      # Automatically track remote branches/bookmarks
+      git.auto-local-bookmark = true;
       # goated alias
       aliases.tug = ["bookmark" "move" "--from" "heads(::@- & bookmarks())" "--to" "@-"];
     };
