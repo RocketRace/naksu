@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./vscode.nix ./git.nix ];
+  imports = [ ./vscode.nix ./git.nix ./utils.nix ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -83,10 +83,6 @@
       cp -Lr Symlinks/* Custom
     '';
   };
-  # tasty nix develop
-  programs.direnv = {
-    enable = true;
-  };
   home.file."Library/Application Support/discord/settings.json" = {
     enable = true;
     text = ''
@@ -98,8 +94,6 @@
       }
     '';
   };
-  # rg
-  programs.ripgrep.enable = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
