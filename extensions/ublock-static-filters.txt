@@ -7,6 +7,7 @@ github.com##[partial-name="copilot-code-chat"]
 github.com##[partial-name="copilot-actions-chat-button"]
 github.com##div[class^=Box]:has(button#diff-lines-copilot-button)
 github.com##div[class*=CopilotWorkspaceButton]:upward(1)
+github.com##div[class*=ButtonGroup]:has(button#code-line-dropdown-copilot-button)
 # (this is petty)
 github.com##li.TimelineItem:has-text(/Copilot/i)
 # youtube hiders
