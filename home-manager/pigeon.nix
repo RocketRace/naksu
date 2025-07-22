@@ -56,7 +56,7 @@
     enable = true;
     shellAliases = {
       pigeon-switch = ''sudo darwin-rebuild switch --flake ~/.config/nix'';
-      pigeon-update = ''cd ~/.config/nix && nix flake update nixpkgs-darwin'';
+      pigeon-update = ''cd ~/.config/nix && nix flake update nixpkgs-darwin && cd -'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initContent = ''
