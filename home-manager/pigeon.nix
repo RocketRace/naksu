@@ -37,7 +37,7 @@
     beautifuldiscord = pkgs.callPackage recipe {};
     env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
     in pkgs.writeShellScriptBin "dinject" ''
-      ${env}/bin/python3 -m beautifuldiscord --css ${./discord/style.css}
+      ${env}/bin/python3 -m beautifuldiscord --css ${../discord/style.css}
     '')
   ];
 
@@ -45,7 +45,7 @@
   # karabiner can't listen for symbolic links so we need to kickstart it
   # https://karabiner-elements.pqrs.org/docs/manual/misc/configuration-file-path/#about-symbolic-link
   home.file.".config/karabiner" = {
-    source = ./karabiner;
+    source = ../karabiner;
     recursive = false;
     onChange = ''
       /bin/launchctl kickstart -k gui/`id -u`/org.pqrs.karabiner.karabiner_console_user_server
@@ -67,7 +67,7 @@
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initContent = ''
-      [[ ! -f ${./p10k/.p10k.zsh} ]] || source ${./p10k/.p10k.zsh}
+      [[ ! -f ${../p10k/.p10k.zsh} ]] || source ${../p10k/.p10k.zsh}
     '';
     plugins = [
       {
@@ -81,7 +81,7 @@
   # jank as hell tbh
   home.file."Library/Fonts/Symlinks" = {
     enable = true;
-    source = ./fonts;
+    source = ../fonts;
     recursive = true;
     onChange = ''
       cd ~/Library/Fonts
