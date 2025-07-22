@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./home-manager/vscode.nix ];
+  imports = [ ./vscode.nix ./git.nix ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -41,21 +41,6 @@
     '')
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
-  home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".config/karabiner/karabiner.json".source = karabiner/karabiner.json;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
-  };
-
   # karabiner-elements should NOT be installed using nix for now. maybe it works in the future.
   # karabiner can't listen for symbolic links so we need to kickstart it
   # https://karabiner-elements.pqrs.org/docs/manual/misc/configuration-file-path/#about-symbolic-link
@@ -67,27 +52,6 @@
     '';
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. These will be explicitly sourced when using a
-  # shell provided by Home Manager. If you don't want to manage your shell
-  # through Home Manager then you have to manually source 'hm-session-vars.sh'
-  # located at either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/olivia/etc/profile.d/hm-session-vars.sh
-  #
-  home.sessionVariables = {
-    # EDITOR = "emacs";
-  };
-
-  programs.gh.enable = true;
   programs.zsh = {
     enable = true;
     shellAliases = {
@@ -112,51 +76,6 @@
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
       }
     ];
-  };
-  programs.git = {
-    enable = true;
-    userName = "RocketRace";
-    userEmail = "git@olivialta.cc";
-    ignores = [ ".DS_Store" ];
-    aliases = {
-      alias = "!f () { if [ \"$#\" = 0 ]; then git config --get-regexp alias; else git config --get \"alias.$1\"; fi }; f";
-      s = "status";
-      a = "! git add . && git status";
-      c = "commit";
-      cm = "commit --message";
-      cam = "commit --amend --message";
-      can = "commit --amend --no-edit";
-      acm = "! git add . && git commit --message";
-      acan = "!git add . && git commit --amend --no-edit";
-      dc = "diff --cached";
-      dh = "!f() { git diff \"head~$1\"; }; f";
-      cd = "checkout";
-      pa = "push --all";
-      pf = "pull --ff-only";
-      spa = "! git stash pop && git add .";
-      lg = "! git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --";
-    };
-    extraConfig = {
-      init.defaultBranch = "main";
-      push.autoSetupRemote = true;
-      pull.rebase = true;
-      rerere.enabled = true;
-    };
-  };
-  programs.jujutsu = {
-    enable = true;
-    settings = {
-      user = {
-        name = "RocketRace";
-        email = "git@olivialta.cc";
-      };
-      ui = {
-        pager = ":builtin";
-        default-command = "log";
-      };
-      # goated alias
-      aliases.tug = ["bookmark" "move" "--from" "heads(::@- & bookmarks())" "--to" "@-"];
-    };
   };
   # custom fonts and keylayouts need to go through lower level mechanisms provided by macos
   # jank as hell tbh

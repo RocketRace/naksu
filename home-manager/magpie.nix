@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./home-manager/vscode.nix ];
+  imports = [ ./vscode.nix ./git.nix ];
   
   # Home Manager needs a bit of information about you and the paths it should
   # manage.

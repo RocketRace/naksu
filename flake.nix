@@ -64,7 +64,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.olivia = import ./home.nix;
+          home-manager.users.olivia = import ./home-manager/pigeon.nix;
           home-manager.sharedModules = [
             mac-app-util.homeManagerModules.default
           ];
@@ -105,7 +105,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.olivia = ./nixos-home.nix;
+          home-manager.users.olivia = ./home-manager/magpie.nix;
 
           # Optionally, use home-manager.extraSpecialArgs to pass
           # arguments to home.nix

@@ -2,40 +2,98 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Battery_barChart_position</key>
+	<integer>1</integer>
+	<key>Battery_batteryDetails_position</key>
+	<integer>2</integer>
 	<key>Battery_battery_additional</key>
-	<string>percentageAndTime</string>
+	<string>innerPercentage</string>
+	<key>Battery_battery_color</key>
+	<false/>
+	<key>Battery_battery_details_mode</key>
+	<string>time</string>
+	<key>Battery_battery_position</key>
+	<integer>0</integer>
 	<key>Battery_battery_xlSize</key>
 	<false/>
+	<key>Battery_label_position</key>
+	<integer>3</integer>
+	<key>Battery_mini_position</key>
+	<integer>4</integer>
+	<key>Battery_widget</key>
+	<string>battery</string>
 	<key>Bluetooth_state</key>
 	<false/>
 	<key>CPU_barChart_position</key>
-	<integer>3</integer>
+	<integer>2</integer>
 	<key>CPU_label_position</key>
-	<integer>1</integer>
+	<integer>5</integer>
 	<key>CPU_lineChart_position</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>CPU_line_chart_box</key>
 	<true/>
+	<key>CPU_line_chart_color</key>
+	<string>indigo</string>
 	<key>CPU_line_chart_frame</key>
 	<false/>
 	<key>CPU_line_chart_label</key>
 	<false/>
+	<key>CPU_line_chart_scale</key>
+	<string>none</string>
 	<key>CPU_line_chart_value</key>
 	<true/>
+	<key>CPU_mini_color</key>
+	<string>white</string>
 	<key>CPU_mini_label</key>
-	<true/>
+	<false/>
 	<key>CPU_mini_position</key>
-	<integer>2</integer>
+	<integer>4</integer>
 	<key>CPU_oneView</key>
 	<true/>
 	<key>CPU_pieChart_position</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>CPU_state</key>
 	<true/>
+	<key>CPU_tachometer_label</key>
+	<false/>
+	<key>CPU_tachometer_monochrome</key>
+	<false/>
 	<key>CPU_tachometer_position</key>
-	<integer>5</integer>
+	<integer>0</integer>
+	<key>CPU_updateInterval</key>
+	<integer>3</integer>
+	<key>CPU_updateTopInterval</key>
+	<integer>3</integer>
 	<key>CPU_widget</key>
-	<string>line_chart</string>
+	<string>tachometer</string>
+	<key>Clock_label_position</key>
+	<integer>1</integer>
+	<key>Clock_list</key>
+	<data>
+	W3siZW5hYmxlZCI6dHJ1ZSwiaWQiOiI4RUUxNTI4OS0wMTg2LTRFRTMtOUY0RS01ODcw
+	MDlDM0Q1QTYiLCJuYW1lIjoiRGF0ZSIsImZvcm1hdCI6IkVFRSBNTU0gZCIsInR6Ijoi
+	bG9jYWwifSx7ImVuYWJsZWQiOmZhbHNlLCJpZCI6IjU1QzE3NkE1LTM5MkMtNEYzMS1B
+	RDQzLUY3REE3ODYyOTM3NCIsIm5hbWUiOiJEYXRlICYgVGltZSIsImZvcm1hdCI6IkVF
+	RSBNTU0gZCBISDptbSIsInR6IjoibG9jYWwifV0=
+	</data>
+	<key>Clock_sensors_mode</key>
+	<string>oneRow</string>
+	<key>Clock_sensors_monospacedFont</key>
+	<false/>
+	<key>Clock_stack_position</key>
+	<integer>0</integer>
+	<key>Clock_state</key>
+	<true/>
+	<key>Clock_widget</key>
+	<string>sensors</string>
+	<key>CombinedModules</key>
+	<false/>
+	<key>CombinedModules_popup</key>
+	<false/>
+	<key>CombinedModules_separator</key>
+	<false/>
+	<key>CombinedModules_spacing</key>
+	<string>none</string>
 	<key>Disk_state</key>
 	<false/>
 	<key>LaunchAtLoginNext</key>
@@ -64,14 +122,24 @@
 	AQAAAAAAAAHQAAAUAQAAAAAAABDQAAAEAAAAAAAAABfwAABMAAAAAAAAACLwAADUAQAA
 	AAAAAA==
 	</data>
-	<key>NSStatusItem Preferred Position Battery_battery</key>
-	<real>390</real>
+	<key>NSStatusItem Preferred Position Battery</key>
+	<real>167</real>
 	<key>NSStatusItem Preferred Position CPU</key>
-	<real>503</real>
+	<real>479</real>
+	<key>NSStatusItem Preferred Position Clock</key>
+	<real>78</real>
 	<key>NSStatusItem Preferred Position Network</key>
-	<real>555</real>
-	<key>NSStatusItem Preferred Position RAM_line_chart</key>
-	<real>455</real>
+	<real>517</real>
+	<key>NSStatusItem Preferred Position RAM</key>
+	<real>441</real>
+	<key>NSStatusItem Restore Position Battery_battery</key>
+	<integer>163</integer>
+	<key>NSStatusItem Restore Position Clock_sensors</key>
+	<integer>78</integer>
+	<key>NSStatusItem Restore Position RAM_line_chart</key>
+	<integer>461</integer>
+	<key>NSStatusItem Restore Position RAM_tachometer</key>
+	<integer>457</integer>
 	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -85,65 +153,131 @@
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 320 800 448 0 0 1440 875 </string>
+	<key>Network_VPNMode</key>
+	<true/>
+	<key>Network_base</key>
+	<string>byte</string>
+	<key>Network_chartHistory</key>
+	<integer>600</integer>
+	<key>Network_downloadColor</key>
+	<string>indigo</string>
 	<key>Network_label_position</key>
-	<integer>2</integer>
+	<integer>4</integer>
 	<key>Network_networkChart_position</key>
-	<integer>1</integer>
+	<integer>2</integer>
+	<key>Network_network_chart_box</key>
+	<false/>
+	<key>Network_network_chart_downloadColor</key>
+	<string>indigo</string>
+	<key>Network_network_chart_frame</key>
+	<false/>
+	<key>Network_network_chart_historyCount</key>
+	<integer>60</integer>
 	<key>Network_network_chart_label</key>
 	<false/>
 	<key>Network_network_chart_reverseOrder</key>
 	<false/>
+	<key>Network_network_chart_scale</key>
+	<string>none</string>
+	<key>Network_network_chart_uploadColor</key>
+	<string>secondPurple</string>
 	<key>Network_oneView</key>
 	<true/>
+	<key>Network_publicIP</key>
+	<false/>
+	<key>Network_reader</key>
+	<string>process</string>
+	<key>Network_speed_displayValue</key>
+	<string>oi</string>
 	<key>Network_speed_downloadColor</key>
-	<string>secondBlue</string>
+	<string>white</string>
 	<key>Network_speed_icon</key>
 	<string>none</string>
+	<key>Network_speed_mode</key>
+	<string>twoRows</string>
+	<key>Network_speed_monochrome</key>
+	<true/>
 	<key>Network_speed_position</key>
-	<integer>0</integer>
+	<integer>3</integer>
+	<key>Network_speed_units</key>
+	<true/>
+	<key>Network_speed_uploadColor</key>
+	<string>white</string>
+	<key>Network_speed_valueColor</key>
+	<string>constant</string>
 	<key>Network_state</key>
 	<true/>
+	<key>Network_state_activeColor</key>
+	<string>indigo</string>
+	<key>Network_state_nonactiveColor</key>
+	<string>gray</string>
 	<key>Network_state_position</key>
-	<integer>3</integer>
-	<key>Network_text_position</key>
-	<integer>4</integer>
-	<key>Network_widget</key>
-	<string>network_chart,speed</string>
-	<key>RAM_barChart_position</key>
-	<integer>3</integer>
-	<key>RAM_label_position</key>
-	<integer>1</integer>
-	<key>RAM_lineChart_position</key>
 	<integer>0</integer>
+	<key>Network_textWidgetValue</key>
+	<string>$status</string>
+	<key>Network_text_position</key>
+	<integer>1</integer>
+	<key>Network_uploadColor</key>
+	<string>pink</string>
+	<key>Network_usageReset</key>
+	<string>Once per month</string>
+	<key>Network_widget</key>
+	<string>state</string>
+	<key>Network_widgetActivationThreshold</key>
+	<integer>8</integer>
+	<key>Network_widgetActivationThresholdSize</key>
+	<string>KB</string>
+	<key>Network_widgetActivationThresholdState</key>
+	<true/>
+	<key>RAM_barChart_position</key>
+	<integer>1</integer>
+	<key>RAM_label_position</key>
+	<integer>3</integer>
+	<key>RAM_lineChart_position</key>
+	<integer>2</integer>
+	<key>RAM_line_chart_color</key>
+	<string>indigo</string>
 	<key>RAM_line_chart_label</key>
 	<false/>
 	<key>RAM_line_chart_value</key>
 	<true/>
 	<key>RAM_memory_position</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>RAM_mini_position</key>
-	<integer>2</integer>
-	<key>RAM_pieChart_position</key>
 	<integer>4</integer>
+	<key>RAM_oneView</key>
+	<true/>
+	<key>RAM_pieChart_position</key>
+	<integer>5</integer>
 	<key>RAM_state</key>
 	<true/>
 	<key>RAM_tachometer_position</key>
-	<integer>6</integer>
+	<integer>0</integer>
 	<key>RAM_text_position</key>
 	<integer>7</integer>
+	<key>RAM_updateInterval</key>
+	<integer>3</integer>
+	<key>RAM_updateTopInterval</key>
+	<integer>3</integer>
 	<key>RAM_widget</key>
-	<string>line_chart</string>
+	<string>tachometer</string>
+	<key>clock_8EE15289-0186-4EE3-9F4E-587009C3D5A6_popupState</key>
+	<false/>
+	<key>dockIcon</key>
+	<false/>
 	<key>runAtLoginInitialized</key>
 	<true/>
 	<key>setupProcess</key>
 	<true/>
+	<key>support_ts</key>
+	<integer>1752315845</integer>
 	<key>telemetry</key>
 	<false/>
-	<key>telemetry_id</key>
-	<string>93E6F23F-E527-4FD2-975D-733584A4B759</string>
+	<key>temperature_units</key>
+	<string>system</string>
 	<key>updater_check_ts</key>
-	<integer>1738435891</integer>
+	<integer>1753184748</integer>
 	<key>version</key>
-	<string>2.11.21</string>
+	<string>2.11.45</string>
 </dict>
 </plist>
