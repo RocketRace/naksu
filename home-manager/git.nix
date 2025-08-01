@@ -5,7 +5,7 @@
     enable = true;
     userName = "RocketRace";
     userEmail = "git@olivialta.cc";
-    ignores = [ ".DS_Store" ];
+    ignores = [ ".DS_Store" ".envrc" ".direnv" ];
     aliases = {
       alias = "!f () { if [ \"$#\" = 0 ]; then git config --get-regexp alias; else git config --get \"alias.$1\"; fi }; f";
       s = "status";
