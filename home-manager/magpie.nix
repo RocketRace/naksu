@@ -17,7 +17,10 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = [ ];
+  home.packages = [
+    (pkgs.writeShellScriptBin "magpie-update" "nix flake update nixpkgs --flake ~/.config/nix")
+    (pkgs.writeShellScriptBin "magpie-switch" "sudo nixos-rebuild switch --flake ~/.config/nix")
+  ];
   home.file = { };
   home.sessionVariables = { };
 

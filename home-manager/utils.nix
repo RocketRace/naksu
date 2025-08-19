@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 {
+  # trying out ghostty
+  programs.ghostty.enable = true;
   # tasty dev shells
   programs.direnv.enable = true;
   # rg
