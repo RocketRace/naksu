@@ -24,10 +24,6 @@
   home.file = { };
   home.sessionVariables = { };
 
-  programs.direnv = {
-    enable = true;
-  };
-
   # trying out ghostty (pigeon uses brew)
   programs.ghostty.enable = true;
 
