@@ -209,6 +209,7 @@
     casks = [
       "firefox"
       "iterm2"
+      "ghostty"
       "steam"
       "karabiner-elements"
       "tailscale"
