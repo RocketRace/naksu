@@ -491,7 +491,7 @@
                                         "value": true
                                     }
                                 ],
-                                "description": "Capslock + T to open iTerm2",
+                                "description": "Capslock + T to open Ghostty",
                                 "from": {
                                     "key_code": "t",
                                     "modifiers": {
@@ -502,7 +502,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a iTerm.app"
+                                        "shell_command": "open -a Ghostty.app"
                                     }
                                 ],
                                 "type": "basic"

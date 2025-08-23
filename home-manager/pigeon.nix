@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./vscode.nix ./git.nix ./utils.nix ];
+  imports = [ ./vscode.nix ./git.nix ./terminal.nix ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
