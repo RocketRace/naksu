@@ -20,13 +20,21 @@
   home.packages = [
     (pkgs.writeShellScriptBin "magpie-update" "nix flake update nixpkgs --flake ~/.config/nix")
     (pkgs.writeShellScriptBin "magpie-switch" "sudo nixos-rebuild switch --flake ~/.config/nix")
+    (pkgs.writeShellScriptBin "magpie-fetch" "cd .config/nix && jj git fetch && jj new main && cd -")
   ];
   home.file = { };
   home.sessionVariables = { };
 
   # trying out ghostty (pigeon uses brew)
   programs.ghostty.enable = true;
-
+  xdg.configFile."ghostty/config" = {
+    enable = true;
+    text = ''
+      theme = Tomorrow Night Bright
+      window-width = 100
+      window-height = 30
+    '';
+  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

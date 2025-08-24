@@ -57,6 +57,7 @@
     shellAliases = {
       pigeon-switch = ''sudo darwin-rebuild switch --flake ~/.config/nix'';
       pigeon-update = ''nix flake update nixpkgs-darwin --flake ~/.config/nix'';
+      pigeon-fetch = ''cd .config/nix && jj git fetch && jj new main && cd -'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initContent = ''
@@ -92,6 +93,19 @@
         "IS_MINIMIZED": false,
         "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true
       }
+    '';
+  };
+  # Ghostty config (mac)
+  xdg.configFile."ghostty/config" = {
+    enable = true;
+    text = ''
+      theme = Tomorrow Night Bright
+      window-width = 100
+      window-height = 30
+      background-opacity = 0.5
+      background-blur = true
+      macos-icon = microchip
+      keybind = global:cmd+grave_accent=toggle_quick_terminal
     '';
   };
   # Let Home Manager install and manage itself.
