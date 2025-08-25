@@ -84,13 +84,24 @@
   nixpkgs.overlays = with inputs; [
     nix-vscode-extensions.overlays.default
   ];
+  
+  fonts = {
+    packages = [
+      # so many tofu...
+      pkgs.noto-fonts
+    ];
 
+    fontconfig.defaultFonts = {
+      sansSerif = [ "Adwaita Sans" "Noto Sans" ];
+    };
+  };
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.olivia = {
     isNormalUser = true;
     description = "Olivia";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      gnome-tweaks
       resources
       discord
       # For proton VPN
