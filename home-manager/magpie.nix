@@ -30,7 +30,7 @@
   xdg.configFile."ghostty/config" = {
     enable = true;
     text = ''
-      theme = Tomorrow Night Bright
+      theme = ayu
       window-width = 100
       window-height = 30
     '';

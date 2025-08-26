@@ -99,13 +99,10 @@
   xdg.configFile."ghostty/config" = {
     enable = true;
     text = ''
-      theme = Tomorrow Night Bright
+      theme = ayu
       window-width = 100
       window-height = 30
-      background-opacity = 0.5
-      background-blur = true
       macos-icon = microchip
-      keybind = global:cmd+grave_accent=toggle_quick_terminal
     '';
   };
   # Let Home Manager install and manage itself.
