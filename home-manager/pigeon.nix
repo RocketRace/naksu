@@ -95,16 +95,6 @@
       }
     '';
   };
-  # Ghostty config (mac)
-  xdg.configFile."ghostty/config" = {
-    enable = true;
-    text = ''
-      theme = ayu
-      window-width = 100
-      window-height = 30
-      macos-icon = microchip
-    '';
-  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

@@ -25,16 +25,8 @@
   home.file = { };
   home.sessionVariables = { };
 
-  # trying out ghostty (pigeon uses brew)
+  # ghostty (pigeon uses brew to install)
   programs.ghostty.enable = true;
-  xdg.configFile."ghostty/config" = {
-    enable = true;
-    text = ''
-      theme = ayu
-      window-width = 100
-      window-height = 30
-    '';
-  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
