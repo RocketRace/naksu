@@ -206,6 +206,10 @@
       # remove unlisted packages
       cleanup = "zap";
     };
+    brews = [
+      # last resorts for computer graphics course
+       "cmake" "pkg-config"
+    ];
     casks = [
       "firefox"
       "iterm2"
