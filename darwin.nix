@@ -14,8 +14,7 @@
     stats
     radicle-node
     cbqn-replxx
-    (python311.withPackages (ps: with ps; [ ipykernel numpy matplotlib ]))
-    python313
+    (python313.withPackages (ps: with ps; [ ipykernel numpy matplotlib ]))
     # personal
   ];
 
