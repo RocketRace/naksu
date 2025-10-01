@@ -111,7 +111,8 @@
       proton-pass
       telegram-desktop
       signal-desktop
-
+      spotify
+      
       # Gnome extensions
       gnomeExtensions.dash-to-dock # Swipeable dash
       gnomeExtensions.blur-my-shell # Cute blurs

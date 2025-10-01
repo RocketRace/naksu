@@ -58,6 +58,8 @@
       pigeon-switch = ''sudo darwin-rebuild switch --flake ~/.config/nix'';
       pigeon-update = ''nix flake update nixpkgs-darwin --flake ~/.config/nix'';
       pigeon-fetch = ''cd ~/.config/nix && jj git fetch && jj new main && cd -'';
+      pigeon-push = ''cd ~/.config/nix && jj commit -m 'Bump pigeon' && jj tug && jj git push && cd -'';
+      pigeon-bump = ''pigeon-fetch && pigeon-update && pigeon-switch && pigeon-push'';
     };
     # Initialize p10k configuration (took a while to find the config line because the wizard doesn't tell you)
     initContent = ''

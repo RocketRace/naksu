@@ -21,6 +21,8 @@
     (pkgs.writeShellScriptBin "magpie-update" "nix flake update nixpkgs --flake ~/.config/nix")
     (pkgs.writeShellScriptBin "magpie-switch" "sudo nixos-rebuild switch --flake ~/.config/nix")
     (pkgs.writeShellScriptBin "magpie-fetch" "cd ~/.config/nix && jj git fetch && jj new main && cd -")
+    (pkgs.writeShellScriptBin "magpie-push" "cd ~/.config/nix && jj commit -m 'Bump magpie' && jj tug && jj git push && cd -")
+    (pkgs.writeShellScriptBin "magpie-bump" "magpie-fetch && magpie-update && magpie-switch && magpie-push")
   ];
   home.file = { };
   home.sessionVariables = { };
