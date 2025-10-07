@@ -27,6 +27,8 @@
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
       "workbench.editor.empty.hint" = "hidden";
       "terminal.integrated.initialHint" = false;
+      "chat.agent.enabled" = false;
+      "chat.disableAIFeatures" = true;
       # please do not enable ai features
       "chat.commandCenter.enabled" = false;
       "python.analysis.addHoverSummaries" = false;
