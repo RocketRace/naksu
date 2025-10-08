@@ -45,9 +45,10 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # Enable the KDE Plasma Desktop Environment.
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -101,7 +102,6 @@
     description = "Olivia";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      gnome-tweaks
       resources
       discord
       # For proton VPN
@@ -114,15 +114,15 @@
       spotify
       
       # Gnome extensions
-      gnomeExtensions.dash-to-dock # Swipeable dash
-      gnomeExtensions.blur-my-shell # Cute blurs
-      gnomeExtensions.appindicator # Tray icons
-      gnomeExtensions.color-picker # Just a little color picker
-      gnomeExtensions.peek-top-bar-on-fullscreen # Glance the top bar when in a fullscreen mode
-      gnomeExtensions.shutdown-dialogue # Thank you alt+f4
-      gnomeExtensions.unblank # Lock screen that isn't blank
+      # gnomeExtensions.dash-to-dock # Swipeable dash
+      # gnomeExtensions.blur-my-shell # Cute blurs
+      # gnomeExtensions.appindicator # Tray icons
+      # gnomeExtensions.color-picker # Just a little color picker
+      # gnomeExtensions.peek-top-bar-on-fullscreen # Glance the top bar when in a fullscreen mode
+      # gnomeExtensions.shutdown-dialogue # Thank you alt+f4
+      # gnomeExtensions.unblank # Lock screen that isn't blank
       
-      # TODO: Once using home-manager, add dconf settings to automatically enable the extensions!
+      # # TODO: Once using home-manager, add dconf settings to automatically enable the extensions!
 
       # global .net SDK for tModLoader mod development
       dotnetCorePackages.sdk_8_0_3xx 
@@ -151,7 +151,26 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [
+    # https://nixos.wiki/wiki/KDE
+    # KDE
+    kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
+    kdePackages.kcalc # Calculator
+    kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
+    kdePackages.kclock # Clock app
+    kdePackages.kcolorchooser # A small utility to select a color
+    kdePackages.kolourpaint # Easy-to-use paint program
+    kdePackages.ksystemlog # KDE SystemLog Application
+    kdePackages.sddm-kcm # Configuration module for SDDM
+    kdiff3 # Compares and merges 2 or 3 files or directories
+    kdePackages.isoimagewriter # Optional: Program to write hybrid ISO files onto USB disks
+    kdePackages.partitionmanager # Optional: Manage the disk devices, partitions and file systems on your computer
+    # Non-KDE graphical packages
+    hardinfo2 # System information and benchmarks for Linux systems
+    vlc # Cross-platform media player and streaming server
+    wayland-utils # Wayland utilities
+    wl-clipboard # Command-line copy/paste utilities for Wayland
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
