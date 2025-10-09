@@ -92,9 +92,9 @@
       pkgs.noto-fonts
     ];
 
-    fontconfig.defaultFonts = {
-      sansSerif = [ "Adwaita Sans" "Noto Sans" ];
-    };
+    # fontconfig.defaultFonts = {
+    #   sansSerif = [ "Adwaita Sans" "Noto Sans" ];
+    # };
   };
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.olivia = {
@@ -207,6 +207,9 @@
       dates = [ "weekly" ];
     };
   };
+
+  # hm file overwrite backups
+  home-manager.backupFileExtension = "home-manager-backup";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

@@ -27,6 +27,7 @@
   home.file = { };
   home.sessionVariables = { };
 
+
   # ghostty (pigeon uses brew to install)
   programs.ghostty.enable = true;
   # Let Home Manager install and manage itself.
