@@ -78,9 +78,6 @@
     #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
   # Add vscode extensions
   nixpkgs.overlays = with inputs; [
     nix-vscode-extensions.overlays.default
@@ -92,9 +89,6 @@
       pkgs.noto-fonts
     ];
 
-    # fontconfig.defaultFonts = {
-    #   sansSerif = [ "Adwaita Sans" "Noto Sans" ];
-    # };
   };
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.olivia = {
@@ -112,17 +106,7 @@
       telegram-desktop
       signal-desktop
       spotify
-      
-      # Gnome extensions
-      # gnomeExtensions.dash-to-dock # Swipeable dash
-      # gnomeExtensions.blur-my-shell # Cute blurs
-      # gnomeExtensions.appindicator # Tray icons
-      # gnomeExtensions.color-picker # Just a little color picker
-      # gnomeExtensions.peek-top-bar-on-fullscreen # Glance the top bar when in a fullscreen mode
-      # gnomeExtensions.shutdown-dialogue # Thank you alt+f4
-      # gnomeExtensions.unblank # Lock screen that isn't blank
-      
-      # # TODO: Once using home-manager, add dconf settings to automatically enable the extensions!
+      prismlauncher
 
       # global .net SDK for tModLoader mod development
       dotnetCorePackages.sdk_8_0_3xx 
