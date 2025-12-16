@@ -154,6 +154,7 @@
     vlc # Cross-platform media player and streaming server
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
+    easyeffects # audio mixing (mono filter)
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
