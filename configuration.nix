@@ -155,6 +155,7 @@
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
     easyeffects # audio mixing (mono filter)
+    krita
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
