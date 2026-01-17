@@ -229,6 +229,7 @@
       "dyalog"
       "godot"
       "stats"
+      "spotify"
     ];
   };
 }

@@ -15,7 +15,6 @@
   # environment.
   home.packages = with pkgs; [
     discord
-    spotify
     prismlauncher
     qbittorrent
     gimp

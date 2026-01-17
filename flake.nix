@@ -14,8 +14,9 @@
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
     # Darwin-specific inputs:
     # Enable apps to show up in spotlight
-    mac-app-util.url = "github:hraban/mac-app-util";
-    mac-app-util.inputs.nixpkgs.follows = "nixpkgs-darwin";
+    # mac-app-util is not building for some reason
+    # mac-app-util.url = "github:hraban/mac-app-util";
+    # mac-app-util.inputs.nixpkgs.follows = "nixpkgs-darwin";
     # declarative homebrew management
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     homebrew-core = {
@@ -40,7 +41,7 @@
     nixpkgs-darwin,
     nix-darwin,
     home-manager,
-    mac-app-util,
+    # mac-app-util,
     nix-vscode-extensions,
     nix-homebrew,
     homebrew-core,
@@ -62,14 +63,14 @@
           ];
         }
         ./darwin.nix
-        mac-app-util.darwinModules.default
+        # mac-app-util.darwinModules.default
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.olivia = import ./home-manager/pigeon.nix;
           home-manager.sharedModules = [
-            mac-app-util.homeManagerModules.default
+            # mac-app-util.homeManagerModules.default
           ];
           # Optionally, use home-manager.extraSpecialArgs to pass
           # arguments to home.nix
