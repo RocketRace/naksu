@@ -11,7 +11,6 @@
     rustc # required by rust-analyzer
     rustfmt
     clippy
-    stats
     radicle-node
     cbqn-replxx
     (python313.withPackages (ps: with ps; [ ipykernel numpy matplotlib ]))
@@ -229,6 +228,7 @@
       "fontforge"
       "dyalog"
       "godot"
+      "stats"
     ];
   };
 }
