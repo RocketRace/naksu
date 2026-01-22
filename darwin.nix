@@ -13,6 +13,7 @@
     clippy
     radicle-node
     cbqn-replxx
+    typst
     (python313.withPackages (ps: with ps; [ ipykernel numpy matplotlib ]))
     # personal
   ];
