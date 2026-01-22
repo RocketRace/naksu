@@ -73,6 +73,8 @@
       # nix
       jnoortheen.nix-ide
       mkhl.direnv
+      # typst
+      myriad-dreamin.tinymist
     ];
   };
 }
