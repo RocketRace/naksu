@@ -7,10 +7,7 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     # development
-    cargo
-    rustc # required by rust-analyzer
-    rustfmt
-    clippy
+    rustup # latest
     radicle-node
     cbqn-replxx
     typst
