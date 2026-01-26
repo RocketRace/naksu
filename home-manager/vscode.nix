@@ -23,7 +23,6 @@
       "window.newWindowDimensions" = "maximized";
       "telemetry.telemetryLevel" = "off";
       "terminal.integrated.showExitAlert" = false;
-      "extensions.autoUpdate" = false;
       "workbench.remoteIndicator.showExtensionRecommendations" = false;
       "workbench.editor.empty.hint" = "hidden";
       "terminal.integrated.initialHint" = false;
