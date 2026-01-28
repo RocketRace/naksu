@@ -228,6 +228,7 @@
       "godot"
       "stats"
       "spotify"
+      "twine"
     ];
   };
 }
