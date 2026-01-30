@@ -56,24 +56,24 @@
     # 2. Perform some action that touches the vscode configuration, eg.
     #    toggling some extensions or just updating your flake
     # 3. Relaunch
-    profiles.default.extensions = with pkgs.vscode-marketplace; [
-      # basic
-      teabyii.ayu
-      # python
-      ms-python.python
-      ms-python.vscode-pylance
-      ms-python.debugpy
-      # jupyter
-      ms-toolsai.jupyter
-      # rust
-      usernamehw.errorlens
-      rust-lang.rust-analyzer
-      tamasfe.even-better-toml
-      # nix
-      jnoortheen.nix-ide
-      mkhl.direnv
-      # typst
-      myriad-dreamin.tinymist
-    ];
+    # profiles.default.extensions = with pkgs.vscode-marketplace; [
+    #   # basic
+    #   # teabyii.ayu
+    #   # python
+    #   # ms-python.python
+    #   # ms-python.vscode-pylance
+    #   # ms-python.debugpy
+    #   # # jupyter
+    #   # ms-toolsai.jupyter
+    #   # # rust
+    #   # usernamehw.errorlens
+    #   # rust-lang.rust-analyzer
+    #   # tamasfe.even-better-toml
+    #   # # nix
+    #   # jnoortheen.nix-ide
+    #   # mkhl.direnv
+    #   # # typst
+    #   # myriad-dreamin.tinymist
+    # ];
   };
 }

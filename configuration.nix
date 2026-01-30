@@ -109,7 +109,7 @@
       prismlauncher
 
       # global .net SDK for tModLoader mod development
-      dotnetCorePackages.sdk_8_0_3xx 
+      dotnetCorePackages.sdk_8_0_4xx 
     ];
   };
 
