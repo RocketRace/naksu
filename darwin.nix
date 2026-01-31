@@ -229,6 +229,8 @@
       "stats"
       "spotify"
       "twine"
+      "gimp"
+      "prismlauncher"
     ];
   };
 }

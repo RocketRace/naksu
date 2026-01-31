@@ -15,9 +15,7 @@
   # environment.
   home.packages = with pkgs; [
     discord
-    prismlauncher
     qbittorrent
-    gimp
     zotero
     # Package BeautifulDiscord and point it to my home config
     (let recipe = { python3, fetchFromGitHub }:
@@ -32,6 +30,8 @@
           hash = "sha256-UnJh39fzbPnXZmBHkAB3w+MeYw/Cpb+m9fpAVMVqM+M=";
         };
         propagatedBuildInputs = [ psutil ];
+        pyproject = true;
+        build-system = [ setuptools ];
     };
     beautifuldiscord = pkgs.callPackage recipe {};
     env = pkgs.python3.withPackages (ps: [ beautifuldiscord ]);
