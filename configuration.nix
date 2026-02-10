@@ -187,6 +187,8 @@
     gc = {
       automatic = true;
       dates = "weekly";
+      # prevent the EFI part of the disk from filling up with old profiles
+      options = "--delete-older-than 7d";
     };
     optimise = {
       automatic = true;
