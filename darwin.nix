@@ -231,6 +231,7 @@
       "twine"
       "gimp"
       "prismlauncher"
+      "audacity"
     ];
   };
 }
