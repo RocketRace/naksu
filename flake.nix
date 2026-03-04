@@ -95,6 +95,8 @@
             enableRosetta = true;
             # User owning the Homebrew prefix
             user = "olivia";
+            # Automatically migrate existing Homebrew installations
+            autoMigrate = true;
             # Optional: Declarative tap management
             taps = {
               "homebrew/homebrew-core" = homebrew-core;
@@ -107,6 +109,10 @@
             mutableTaps = false;
           };
         }
+        # Optional: Align homebrew taps config with nix-homebrew
+        ({config, ...}: {
+          homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
+        })
       ];
       specialArgs = { inherit inputs; };
     };

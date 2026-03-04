@@ -212,7 +212,7 @@
       "ghostty"
       "steam"
       "karabiner-elements"
-      "tailscale"
+      "tailscale-app"
       "proton-mail"
       "proton-drive"
       "protonvpn"
@@ -223,15 +223,16 @@
       "kicad"
       "ukelele"
       "processing"
-      "fontforge"
+      "fontforge-app"
       "dyalog"
       "godot"
       "stats"
       "spotify"
-      "twine"
+      "twine-app"
       "gimp"
       "prismlauncher"
       "audacity"
+      "obs"
     ];
   };
 }
