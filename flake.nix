@@ -24,6 +24,7 @@
       flake = false;
     };
     homebrew-cask = {
+      # okay apparently you need to bump this if you want to upgrade casks...
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
