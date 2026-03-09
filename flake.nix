@@ -15,8 +15,8 @@
     # Darwin-specific inputs:
     # Enable apps to show up in spotlight
     # mac-app-util is not building for some reason
-    # mac-app-util.url = "github:hraban/mac-app-util";
-    # mac-app-util.inputs.nixpkgs.follows = "nixpkgs-darwin";
+    mac-app-util.url = "github:hraban/mac-app-util";
+    mac-app-util.inputs.nixpkgs.follows = "nixpkgs-darwin";
     # declarative homebrew management
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     homebrew-core = {
@@ -49,6 +49,7 @@
     homebrew-cask,
     homebrew-bundle,
     nix-rosetta-builder,
+    mac-app-util,
   }:
   {
     # Build darwin flake using:
@@ -64,7 +65,7 @@
           ];
         }
         ./darwin.nix
-        # mac-app-util.darwinModules.default
+        mac-app-util.darwinModules.default
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
