@@ -218,6 +218,7 @@
       "protonvpn"
       "signal"
       "telegram"
+      "discord"
       "blender"
       "arduino-ide"
       "kicad"
