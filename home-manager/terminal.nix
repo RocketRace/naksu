@@ -6,7 +6,7 @@
   xdg.configFile."ghostty/config" = {
     enable = true;
     text = ''
-      theme = ayu
+      theme = Ayu
       window-width = 100
       window-height = 30
       macos-icon = microchip
